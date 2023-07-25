@@ -1,39 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fruit brust</title>
     <!-- daisyul -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
-<!-- lato font -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
-<!-- custom color -->
-<script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-          }
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- lato font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/5c23800a8d.js" crossorigin="anonymous"></script>
+    <!-- custom color -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'bg-color': '#F85559',
+                    }
+                }
+            }
         }
-      }
-    }
-  </script>
-<style>
-    .font-primary{
-        font-family: 'Lato', sans-serif;
-    }
-
-</style>
+    </script>
+    <style>
+        .font-primary {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
 
 </head>
-<body>
-    <header>
 
+<body class="font-primary mx-52">
+    <header>
+        <nav>
+            <div class="navbar bg-bg-color text-white rounded-full my-12 px-9 py-5">
+                <div class="flex-1">
+                    <ul class="flex gap-5 text-xs">
+                        <li>Home</li>
+                        <li>About us</li>
+                        <li>Shop</li>
+                        <li>All Fruits</li>
+                    </ul>
+                </div>
+                    <div class="flex pr-28">
+                            <img class="w-10 rounded pr-2" src="./images/logo.png" />
+                            <h2 class="text-2xl font-bold">
+                                Fruit Burst
+                            </h2>
+                    </div>
+
+                <div class="flex-none gap-2">
+                    <div class="relative form-control">
+                        <i class="absolute left-40 top-4 text-black fa-solid fa-magnifying-glass "></i>
+                        <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto lg:h-10 rounded-full" />
+                    </div>
+                   
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
 
@@ -41,6 +70,7 @@
     <footer>
 
     </footer>
-    
+
 </body>
+
 </html>
