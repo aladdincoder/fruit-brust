@@ -37,8 +37,9 @@
 
 <body class="font-primary lg:mx-36">
   <header>
-    <nav class="invisible lg:visible">
-      <div class="navbar bg-bg-color text-white rounded-full my-12 px-9 py-5">
+    <nav class="">
+      <!-- nav for lg -->
+      <div class="invisible lg:visible navbar bg-bg-color text-white rounded-full my-12 px-9 py-5">
         <div class="flex-1">
           <ul class="flex gap-5 text-xs">
             <li>Home</li>
@@ -61,6 +62,21 @@
           </div>
 
         </div>
+      </div>
+      <!-- nav for mobile -->
+      <div class="navbar visible lg:invisible">
+        <div class="flex pr-28">
+          <img class="w-10 rounded pr-2" src="./images/logo.png" />
+          <h2 class="text-2xl font-bold">
+            Fruit Burst
+          </h2>
+        </div>
+        <div class="flex-none">
+          <button class="btn btn-square btn-ghost">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          </button>
+        </div>   
+        
       </div>
     </nav>
     <!-- background and slider -->
@@ -442,52 +458,96 @@
       <h3 class="text-3xl text-center font-extrabold mt-28">Why Choose Us</h3>
       <p class="text-center text-xs font-normal mt-4">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
 
+      <!-- . -->
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-8">
-        <!-- . -->
-        <div class="">
-          <!-- 1st cols -->
-          <h4 class="underline underline-offset-8 text-sm font-extrabold"><i class="fa-solid fa-user-group"></i>Dedicated Team</h4>
-          <p class="text-xs font-normal mt-3">Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
-          <h4 class="underline underline-offset-8 text-sm font-extrabold mt-4"><i class="fa-regular fa-heart"></i>Fresh is Best</h4>
-          <p class="text-xs font-normal mt-3">Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
-          <h4 class="underline underline-offset-8 text-sm font-extrabold mt-4"><i class="fa-solid fa-gifts"></i>Gift Certificates</h4>
-          <p class="text-xs font-normal mt-3">Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
+        <!-- 1st cols -->
+        <div>
+        <div class="flex gap-2 flex-col lg:flex-row">
+          <div>
+            <i class="fa-solid fa-user-group bg-gray-200 rounded-full mt-2 p-3"></i>
+          </div>
+          <div>
+            <h3 class="underline underline-offset-8 text-sm font-extrabold mb-4">Dedicated Team</h3>
+          <p class="text-xs font-normal mt-3">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+          </div>
         </div>
+        <div class="flex gap-2 flex-col lg:flex-row mt-7">
+          <div>
+            <i class="fa-regular fa-heart bg-gray-200 rounded-full mt-2 p-3"></i>
+          </div>
+          <div>
+            <h3 class="underline underline-offset-8 text-sm font-extrabold mb-4">Fresh is Best</h3>
+          <p class="text-xs font-normal mt-3">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+          </div>
+        </div>
+        <div class="flex gap-2 flex-col lg:flex-row mt-7">
+          <div>
+            <i class="fa-solid fa-gifts bg-gray-200 rounded-full mt-2 p-3"></i>
+          </div>
+          <div>
+            <h3 class="underline underline-offset-8 text-sm font-extrabold mb-4">Gift Certificates</h3>
+          <p class="text-xs font-normal mt-3">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+          </div>
+        </div>
+      </div>
+          
         <!-- 2nd cols -->
         <div>
-          <img class="w-60 h-52" src="./images/whychoose1.png" alt="">
+          <img class="w-64 h-60 " src="./images/whychoose1.png" alt="">
         </div>
         <!-- 3rd cols -->
-        <div class="text-right">
-          <h4 class="underline underline-offset-8 text-sm font-extrabold"><i class="fa-regular fa-lemon"></i>Integrated Supplier</h4>
-          <p class="text-xs font-normal mt-3">Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
-          <h4 class="underline underline-offset-8 text-sm font-extrabold"><i class="fa-solid fa-ice-cream"></i>Sustainable Practice</h4>
-          <p class="text-xs font-normal mt-3">Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
-          <h4 class="underline underline-offset-8 text-sm font-extrabold"><i class="fa-solid fa-thumbs-up"></i>The Benefits Only</h4>
-          <p class="text-xs font-normal mt-3">Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
+        <div class="text-right ">
+        <div class="flex gap-2 flex-col lg:flex-row-reverse">
+          <div>
+            <i class="fa-regular fa-lemon bg-gray-200 rounded-full mt-2 p-3"></i>
+          </div>
+          <div>
+            <h3 class="underline underline-offset-8 text-sm font-extrabold mb-4">Integrated Supplier</h3>
+          <p class="text-xs font-normal mt-3">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+          </div>
         </div>
+        <div class="flex gap-2 flex-col lg:flex-row-reverse mt-7">
+          <div>
+            <i class="fa-solid fa-ice-cream bg-gray-200 rounded-full mt-2 p-3"></i>
+          </div>
+          <div>
+            <h3 class="underline underline-offset-8 text-sm font-extrabold mb-4">Sustainable Practice</h3>
+          <p class="text-xs font-normal mt-3">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+          </div>
+        </div>
+        <div class="flex gap-2 flex-col lg:flex-row-reverse mt-7">
+          <div>
+            <i class="fa-solid fa-thumbs-up bg-gray-200 rounded-full mt-2 p-3"></i>
+          </div>
+          <div>
+            <h3 class="underline underline-offset-8 text-sm font-extrabold mb-4">The Benefits Only</h3>
+          <p class="text-xs font-normal mt-3">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+          </div>
+        </div>
+      </div>
         <!-- .. -->
       </div>
     </section>
   </main>
  
   <footer class="footer footer-center mt-8 p-10 bg-black text-base-content rounded">
-    <div class="flex ">
+    <div class="flex pt-10">
       <img class="w-10 rounded pr-2" src="./images/logo.png" />
       <h2 class="text-white text-2xl font-bold">
         Fruit Burst
       </h2>
     </div>
-    <div class="grid grid-flow-col gap-4">
+    <div class="grid grid-flow-col gap-8">
       <a class="link link-hover text-white">Home</a> 
       <a class="link link-hover text-white">About Us</a> 
       <a class="link link-hover text-white">Shop</a> 
+      <a class="link link-hover text-white">All Fruits</a> 
       <a class="link link-hover text-white">Support</a>
       <a class="link link-hover text-white">My Account</a>
     
     </div> 
     <div>
-      <div class="grid grid-flow-col gap-4 w-40">
+      <div class="grid grid-flow-col gap-5 w-56">
         <a href=""><img src="./images/icon/twitter 00(1).png" alt=""></a>
         <a href=""><img src="./images/icon/facebook  (2).png" alt=""></a>
         <a href=""><img src="./images/icon/Group 49 (1).png" alt=""></a>
